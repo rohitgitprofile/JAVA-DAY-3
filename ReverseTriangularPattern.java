@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class ReverseTriangularPattern {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int r;
+        System.out.println("enter the number of rows in a rectangle start pattern");
+        r = sc.nextInt();
+        for (int i=1; i<=r; i++) {
+            for(int j=r; j>=i; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
